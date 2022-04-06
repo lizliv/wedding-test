@@ -1,0 +1,64 @@
+@import "src/theme";
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main {
+    // Size and position
+    position: fixed;
+    width: 70%device-width;
+    height: 40%device-height;
+    // Appearance
+    background: white;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+    // Text/content display
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width:350px) {
+    /* CSS for screens that are 320 pixels or less will be put in this section */
+    .main{
+      max-width: 300px;
+      max-height: 450px;
+    }
+  }
+
+  .main .footer{
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main .footer button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .displayBlock {
+    display: block;
+  }
+  
+  .displayNone {
+    display: none;
+  }
+  

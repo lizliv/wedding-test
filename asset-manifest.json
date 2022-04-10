@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/wedding-test/static/css/main.1d7db8f2.chunk.css",
-    "main.js": "/wedding-test/static/js/main.12256b8a.chunk.js",
-    "main.js.map": "/wedding-test/static/js/main.12256b8a.chunk.js.map",
+    "main.css": "/wedding-test/static/css/main.8492b1d9.chunk.css",
+    "main.js": "/wedding-test/static/js/main.405db5a6.chunk.js",
+    "main.js.map": "/wedding-test/static/js/main.405db5a6.chunk.js.map",
     "runtime-main.js": "/wedding-test/static/js/runtime-main.92437afb.js",
     "runtime-main.js.map": "/wedding-test/static/js/runtime-main.92437afb.js.map",
     "static/css/2.3661fc73.chunk.css": "/wedding-test/static/css/2.3661fc73.chunk.css",
-    "static/js/2.4bedbeae.chunk.js": "/wedding-test/static/js/2.4bedbeae.chunk.js",
-    "static/js/2.4bedbeae.chunk.js.map": "/wedding-test/static/js/2.4bedbeae.chunk.js.map",
+    "static/js/2.8ac8f5fb.chunk.js": "/wedding-test/static/js/2.8ac8f5fb.chunk.js",
+    "static/js/2.8ac8f5fb.chunk.js.map": "/wedding-test/static/js/2.8ac8f5fb.chunk.js.map",
     "index.html": "/wedding-test/index.html",
-    "precache-manifest.4a878a70c7f2d90a353017a127abb8d1.js": "/wedding-test/precache-manifest.4a878a70c7f2d90a353017a127abb8d1.js",
+    "precache-manifest.b16bc22d12e8710f0ad8b422bb5f3f47.js": "/wedding-test/precache-manifest.b16bc22d12e8710f0ad8b422bb5f3f47.js",
     "service-worker.js": "/wedding-test/service-worker.js",
     "static/css/2.3661fc73.chunk.css.map": "/wedding-test/static/css/2.3661fc73.chunk.css.map",
-    "static/css/main.1d7db8f2.chunk.css.map": "/wedding-test/static/css/main.1d7db8f2.chunk.css.map",
-    "static/js/2.4bedbeae.chunk.js.LICENSE.txt": "/wedding-test/static/js/2.4bedbeae.chunk.js.LICENSE.txt",
+    "static/css/main.8492b1d9.chunk.css.map": "/wedding-test/static/css/main.8492b1d9.chunk.css.map",
+    "static/js/2.8ac8f5fb.chunk.js.LICENSE.txt": "/wedding-test/static/js/2.8ac8f5fb.chunk.js.LICENSE.txt",
     "static/media/airplane.jpg": "/wedding-test/static/media/airplane.38ba9080.jpg",
+    "static/media/brazil.jpg": "/wedding-test/static/media/brazil.197ef9fc.jpg",
+    "static/media/cafebrauer.jpg": "/wedding-test/static/media/cafebrauer.9ff1a03e.jpg",
     "static/media/faq.jpg": "/wedding-test/static/media/faq.8766bc37.jpg",
     "static/media/Header.module.scss": "/wedding-test/static/media/header_small.a3081ddf.jpg",
+    "static/media/honeycomb.jpg": "/wedding-test/static/media/honeycomb.c04e9bb9.jpg",
     "static/media/registry.jpg": "/wedding-test/static/media/registry.c6ff88b0.jpg",
     "static/media/rsvp.jpg": "/wedding-test/static/media/rsvp.5d3f2328.jpg",
     "static/media/schedule.jpg": "/wedding-test/static/media/schedule.b919db3f.jpg",
@@ -25,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.92437afb.js",
     "static/css/2.3661fc73.chunk.css",
-    "static/js/2.4bedbeae.chunk.js",
-    "static/css/main.1d7db8f2.chunk.css",
-    "static/js/main.12256b8a.chunk.js"
+    "static/js/2.8ac8f5fb.chunk.js",
+    "static/css/main.8492b1d9.chunk.css",
+    "static/js/main.405db5a6.chunk.js"
   ]
 }

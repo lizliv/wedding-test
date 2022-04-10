@@ -14,7 +14,7 @@ import {
   collection,
   where,
   doc,
-  addDoc,
+  // addDoc,
   setDoc,
 } from "firebase/firestore";
 
@@ -45,9 +45,11 @@ const registerWithEmailAndPassword = async ({ name, email, password }) => {
 
   const qusers = query(collection(db, "users"), where("email", "==", email));
   const userSnapshot = await getDocs(qusers);
+
   // User document added with the reference (name) of the user without spaces
   if (isUndefined(userSnapshot.docs[0])) {
     await setDoc(doc(db, 'users', name.replace(/\s+/g, '')), { name: name, email: email, uid: user.uid }, { merge: true })
+    // .catch((e) => {  console.log(e); })
   }
   // User document update with the name as entered by the user (based on email)
   else {
@@ -77,7 +79,19 @@ const logout = () => {
 const checkEmailInUse = async (username, email) => {
   const allusers = query(collection(db, "users"), where("email", "==", email));
   const userDocs = await getDocs(allusers);
-  return isUndefined(userDocs.docs[0])
+
+  let emailIsInUse = !isUndefined(userDocs.docs[0])
+  // console.log('email is in use?', emailIsInUse)
+  if (emailIsInUse === true){
+    const foundDocumentID = userDocs.docs[0].ref.id
+    // console.log('ID of found document',foundDocumentID)
+    // console.log('Current user:',username.replace(/\s+/g, ''))
+    if (foundDocumentID.includes(username.replace(/\s+/g, ''))){
+      emailIsInUse = false
+    }
+  }
+
+  return emailIsInUse
 }
 
 
@@ -97,7 +111,7 @@ const fetchUserName = async (user) => {
 
     } catch (err) {
       console.error(err);
-      alert("An error occured while fetching user data");
+      // alert("An error occured while fetching user data");
     }
   }
 
@@ -133,7 +147,7 @@ const fetchUserRSVPallowed = async (email) => {
 
     } catch (err) {
       console.error(err);
-      alert("An error occured while fetching user data");
+      // alert("An error occured while fetching user data");
     }
   }
 
@@ -152,7 +166,7 @@ const fetchUserRSVPdata = async (email) => {
 
   } catch (err) {
     console.error(err);
-    alert("An error occured while fetching user data");
+    // alert("An error occured while fetching user data");
   }
 
   return weddingData
@@ -175,7 +189,7 @@ const putRSVPDataToDB = async ({ UserName, UserEmail, Name, Email, Data, HasPlus
       // INITIAL CHECK
       //Don't let someone add a plus one that is already invited to the wedding
       const emailExists = await checkEmailInUse(UserName, Email)
-      if (emailExists === false) {
+      if (emailExists === true) {
         throw new Error('The email you entered is already in use by another guest!');
       }
       // PLUS ONE UPDATE
@@ -244,23 +258,25 @@ const fetchPartyUsers = async (email) => {
     partyPlusOneAdded = partyData.plusOneAdded
 
     for (let i = 0; i < partyGuestEmails.length; i++) {
-      // if (partyGuestEmails[i] == "plus_one"){
-      //   partyGuestNames[i] = "Plus One"
-      // }
-      // else{
       const q = query(collection(db, "users"), where("email", "==", partyGuestEmails[i]));
       const doc = await getDocs(q);
       const nameData = doc.docs[0].data();
 
       partyGuestNames[i] = nameData.name
     }
-    // }
+
+    partyGuests = { 
+      names: partyGuestNames, 
+      emails: partyGuestEmails, 
+      hasPlusOne: partyPlusOne, 
+      plusOneAdded: partyPlusOneAdded 
+    }
 
   } catch (err) {
     console.error(err)
     alert(err.message)
   }
-  return partyGuests = { names: partyGuestNames, emails: partyGuestEmails, hasPlusOne: partyPlusOne, plusOneAdded: partyPlusOneAdded }
+  return partyGuests
 }
 
 export {

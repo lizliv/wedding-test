@@ -4,6 +4,7 @@ import {
     // auth,
     logInWithEmailAndPassword,
     registerWithEmailAndPassword,
+    sendPasswordReset,
     logout,
     // currentAuthenticatedUser,
     fetchUserName,
@@ -106,6 +107,28 @@ export const signOut = async dispatch => {
     }
 }
 
+export const passwordReset = async (
+    { email },
+    setSubmitting,
+    setStatus,
+    setShowConfirmation,
+    dispatch
+) => {
+    try {
+        await sendPasswordReset(email)
+
+        setShowConfirmation(true)
+        // dismiss alert
+        setTimeout(() => setShowConfirmation(false), 6000)
+    } catch (error) {
+        let { message } = error
+        if (message.includes("user-not-found")){
+            message = "Could not find an account with the provided email address."
+        }
+        setStatus(message)
+    }
+    setSubmitting(false)
+}
 
 export const fetchUserRSVPInformation = async (email, dispatch) => {
     try {
@@ -134,8 +157,7 @@ export const fetchUserRSVPInformation = async (email, dispatch) => {
 }
 
 export const putUserRSVPInformation = async (
-    // { email, isAttending, foodChoice, dietRestrictions, guestNote},
-    { email, userEmail, guestData, partyNote },
+    { email, userName, userEmail, guestData, partyNote },
     setSubmitting,
     setStatus,
     setShowConfirmation,
@@ -144,6 +166,7 @@ export const putUserRSVPInformation = async (
     try {
         await Promise.all(guestData.map(function (guest, index) {
             return putRSVPDataToDB({
+                UserName: userName,
                 UserEmail: userEmail,
                 Name: guest.name,
                 Email: guest.email.toLowerCase(),
@@ -161,26 +184,6 @@ export const putUserRSVPInformation = async (
                 PlusOneAdded: guest.plusOneAdded
             })
         }));
-
-        // guestData.forEach(function (guest, index) { 
-        //     putRSVPDataToDB({
-        //         UserEmail: userEmail,
-        //         Name: guest.name,
-        //         Email: guest.email.toLowerCase(),
-        //         Data: {
-        //             Wedding: {
-        //                 IsAttending: guest.isAttending,
-        //                 ...(guest.foodChoice ? { FoodChoice: guest.foodChoice } : {}),
-        //                 DietRestrictions: guest.dietRestrictions,
-        //                 Note: partyNote,
-        //                 IsAPlusOne: guest.isAPlusOne
-        //             },
-        //             confirmed: guest.isAttending,
-        //         },
-        //         HasPlusOne: guest.plusOneAllowed,
-        //         PlusOneAdded: guest.plusOneAdded
-        //     })
-        // });
 
         // Problem here. Need to wait for put to be done before doing this operation
         await fetchUserRSVPInformation(email, dispatch)

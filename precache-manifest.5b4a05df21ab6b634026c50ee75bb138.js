@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c33bd3d0818ca1cab785d05c201a2892",
+    "revision": "0f596ced247aefb9a89f685486a39801",
     "url": "/wedding-test/index.html"
   },
   {
-    "revision": "25e5e565f3e7626b046b",
+    "revision": "34396fce176030658c50",
     "url": "/wedding-test/static/css/2.3661fc73.chunk.css"
   },
   {
-    "revision": "f891a115af92b6a9278c",
-    "url": "/wedding-test/static/css/main.26976ebe.chunk.css"
+    "revision": "5d6bb5358c1efc790b7c",
+    "url": "/wedding-test/static/css/main.142c7904.chunk.css"
   },
   {
-    "revision": "25e5e565f3e7626b046b",
-    "url": "/wedding-test/static/js/2.2904112a.chunk.js"
+    "revision": "34396fce176030658c50",
+    "url": "/wedding-test/static/js/2.af351b1f.chunk.js"
   },
   {
     "revision": "3fc520b8ee63938f06d68b7c9ff9d845",
-    "url": "/wedding-test/static/js/2.2904112a.chunk.js.LICENSE.txt"
+    "url": "/wedding-test/static/js/2.af351b1f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f891a115af92b6a9278c",
-    "url": "/wedding-test/static/js/main.57f3a835.chunk.js"
+    "revision": "5d6bb5358c1efc790b7c",
+    "url": "/wedding-test/static/js/main.1d91b9b2.chunk.js"
   },
   {
     "revision": "20cc4c0212d63bbf7371",

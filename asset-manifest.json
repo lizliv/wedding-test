@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/wedding-test/static/css/main.142c7904.chunk.css",
-    "main.js": "/wedding-test/static/js/main.1d91b9b2.chunk.js",
-    "main.js.map": "/wedding-test/static/js/main.1d91b9b2.chunk.js.map",
+    "main.js": "/wedding-test/static/js/main.362f7f4c.chunk.js",
+    "main.js.map": "/wedding-test/static/js/main.362f7f4c.chunk.js.map",
     "runtime-main.js": "/wedding-test/static/js/runtime-main.92437afb.js",
     "runtime-main.js.map": "/wedding-test/static/js/runtime-main.92437afb.js.map",
     "static/css/2.3661fc73.chunk.css": "/wedding-test/static/css/2.3661fc73.chunk.css",
     "static/js/2.af351b1f.chunk.js": "/wedding-test/static/js/2.af351b1f.chunk.js",
     "static/js/2.af351b1f.chunk.js.map": "/wedding-test/static/js/2.af351b1f.chunk.js.map",
     "index.html": "/wedding-test/index.html",
-    "precache-manifest.5b4a05df21ab6b634026c50ee75bb138.js": "/wedding-test/precache-manifest.5b4a05df21ab6b634026c50ee75bb138.js",
+    "precache-manifest.02b24e77694ad9b5e851e8952ec81412.js": "/wedding-test/precache-manifest.02b24e77694ad9b5e851e8952ec81412.js",
     "service-worker.js": "/wedding-test/service-worker.js",
     "static/css/2.3661fc73.chunk.css.map": "/wedding-test/static/css/2.3661fc73.chunk.css.map",
     "static/css/main.142c7904.chunk.css.map": "/wedding-test/static/css/main.142c7904.chunk.css.map",
@@ -29,6 +29,6 @@
     "static/css/2.3661fc73.chunk.css",
     "static/js/2.af351b1f.chunk.js",
     "static/css/main.142c7904.chunk.css",
-    "static/js/main.1d91b9b2.chunk.js"
+    "static/js/main.362f7f4c.chunk.js"
   ]
 }

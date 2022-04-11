@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a72417d390f751c59e6cced045b60217",
+    "revision": "d9fb0154bc9466ba0449bf7cfadcdddf",
     "url": "/wedding-test/index.html"
   },
   {
-    "revision": "da88d2a5f78d62dca06b",
+    "revision": "a6a7f3b8e96fc48ddfa7",
     "url": "/wedding-test/static/css/2.3661fc73.chunk.css"
   },
   {
-    "revision": "a4c2421b33f94ef4462f",
+    "revision": "628e3141eb25e3fe4ef1",
     "url": "/wedding-test/static/css/main.8492b1d9.chunk.css"
   },
   {
-    "revision": "da88d2a5f78d62dca06b",
-    "url": "/wedding-test/static/js/2.8ac8f5fb.chunk.js"
+    "revision": "a6a7f3b8e96fc48ddfa7",
+    "url": "/wedding-test/static/js/2.0039528b.chunk.js"
   },
   {
     "revision": "3fc520b8ee63938f06d68b7c9ff9d845",
-    "url": "/wedding-test/static/js/2.8ac8f5fb.chunk.js.LICENSE.txt"
+    "url": "/wedding-test/static/js/2.0039528b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a4c2421b33f94ef4462f",
-    "url": "/wedding-test/static/js/main.405db5a6.chunk.js"
+    "revision": "628e3141eb25e3fe4ef1",
+    "url": "/wedding-test/static/js/main.b71919ea.chunk.js"
   },
   {
     "revision": "20cc4c0212d63bbf7371",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "38ba9080a9da64e0568ce5b8119fed3a",
     "url": "/wedding-test/static/media/airplane.38ba9080.jpg"
-  },
-  {
-    "revision": "197ef9fcbc2a4fda7f4959009fcaf819",
-    "url": "/wedding-test/static/media/brazil.197ef9fc.jpg"
   },
   {
     "revision": "9ff1a03ee4bc43aa53ea1f868403369b",

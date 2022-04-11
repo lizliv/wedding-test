@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/wedding-test/static/css/main.8492b1d9.chunk.css",
-    "main.js": "/wedding-test/static/js/main.405db5a6.chunk.js",
-    "main.js.map": "/wedding-test/static/js/main.405db5a6.chunk.js.map",
+    "main.js": "/wedding-test/static/js/main.b71919ea.chunk.js",
+    "main.js.map": "/wedding-test/static/js/main.b71919ea.chunk.js.map",
     "runtime-main.js": "/wedding-test/static/js/runtime-main.92437afb.js",
     "runtime-main.js.map": "/wedding-test/static/js/runtime-main.92437afb.js.map",
     "static/css/2.3661fc73.chunk.css": "/wedding-test/static/css/2.3661fc73.chunk.css",
-    "static/js/2.8ac8f5fb.chunk.js": "/wedding-test/static/js/2.8ac8f5fb.chunk.js",
-    "static/js/2.8ac8f5fb.chunk.js.map": "/wedding-test/static/js/2.8ac8f5fb.chunk.js.map",
+    "static/js/2.0039528b.chunk.js": "/wedding-test/static/js/2.0039528b.chunk.js",
+    "static/js/2.0039528b.chunk.js.map": "/wedding-test/static/js/2.0039528b.chunk.js.map",
     "index.html": "/wedding-test/index.html",
-    "precache-manifest.b16bc22d12e8710f0ad8b422bb5f3f47.js": "/wedding-test/precache-manifest.b16bc22d12e8710f0ad8b422bb5f3f47.js",
+    "precache-manifest.89881d8c69f7746ca22d930a2c4d2266.js": "/wedding-test/precache-manifest.89881d8c69f7746ca22d930a2c4d2266.js",
     "service-worker.js": "/wedding-test/service-worker.js",
     "static/css/2.3661fc73.chunk.css.map": "/wedding-test/static/css/2.3661fc73.chunk.css.map",
     "static/css/main.8492b1d9.chunk.css.map": "/wedding-test/static/css/main.8492b1d9.chunk.css.map",
-    "static/js/2.8ac8f5fb.chunk.js.LICENSE.txt": "/wedding-test/static/js/2.8ac8f5fb.chunk.js.LICENSE.txt",
+    "static/js/2.0039528b.chunk.js.LICENSE.txt": "/wedding-test/static/js/2.0039528b.chunk.js.LICENSE.txt",
     "static/media/airplane.jpg": "/wedding-test/static/media/airplane.38ba9080.jpg",
-    "static/media/brazil.jpg": "/wedding-test/static/media/brazil.197ef9fc.jpg",
     "static/media/cafebrauer.jpg": "/wedding-test/static/media/cafebrauer.9ff1a03e.jpg",
     "static/media/faq.jpg": "/wedding-test/static/media/faq.8766bc37.jpg",
     "static/media/Header.module.scss": "/wedding-test/static/media/header_small.a3081ddf.jpg",
@@ -28,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.92437afb.js",
     "static/css/2.3661fc73.chunk.css",
-    "static/js/2.8ac8f5fb.chunk.js",
+    "static/js/2.0039528b.chunk.js",
     "static/css/main.8492b1d9.chunk.css",
-    "static/js/main.405db5a6.chunk.js"
+    "static/js/main.b71919ea.chunk.js"
   ]
 }
